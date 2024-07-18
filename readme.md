@@ -45,21 +45,21 @@ This project is a Django-based user authentication system using email and One-Ti
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/yourusername/auth_project.git
+    git clone https://github.com/rushabhkhandhar/UniAcco_task.git
     cd auth_project
     ```
 
 2. Build and run the Docker containers:
 
     ```bash
-    docker-compose up --build
+    docker-compose exec web bash
     ```
 
 3. Apply database migrations:
 
     ```bash
-    docker-compose exec web python manage.py makemigrations
-    docker-compose exec web python manage.py migrate
+    python manage.py makemigrations
+    python manage.py migrate
     ```
 
 ### API Endpoints
